@@ -1,12 +1,12 @@
 Summary:	Binflash (NEC version) - universal firmware flasher for binary firmwares
 Summary(pl):	Binflash (wersja NEC) - uniwersalne narzêdzie do uaktualniania binarnych firmware
 Name:		binflash
-Version:	1.02
+Version:	1.10
 Release:	0.1
 License:	? (closed source)
 Group:		Applications/System
-Source0:	http://binflash.cdfreaks.com/download/1/2/necflash_linux.tgz
-# Source0-md5:	ffa1d581d6bea339b3806cd40d83648d
+Source0:	necflash_linux.tgz
+# Source0-md5:	b6e919962e8e681bf0c54346fcad88c1
 URL:		http://binflash.cdfreaks.com/
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
