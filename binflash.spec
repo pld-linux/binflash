@@ -1,12 +1,14 @@
 Summary:	Binflash (NEC version) - universal firmware flasher for binary firmwares
+Summary(pl):	Binflash (wersja NEC) - uniwersalne narzêdzie do uaktualniania binarnych firmware
 Name:		binflash
 Version:	1.02
 Release:	0.1
 License:	? (closed source)
 Group:		Applications/System
-Source0:	necflash_linux.tgz
+Source0:	http://binflash.cdfreaks.com/download/1/2/necflash_linux.tgz
 # Source0-md5:	ffa1d581d6bea339b3806cd40d83648d
-URL:		http://binflash.cdfreaks.com
+URL:		http://binflash.cdfreaks.com/
+ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -20,13 +22,29 @@ via Firewire or USB.
 Disclaimer:
 
 By using this program and accepting the disclaimer you accept that
-neither the authors of this programs nor CDFreaks.com can be held
+neither the authors of these programs nor CDFreaks.com can be held
 responsible for any damages caused by using Binflash. If you damage
 your drive by using this flasher or any experimental firmwares, do not
 RMA your drive but buy a new one!
 
+%description -l pl
+Binflash to zestaw narzêdzi do uaktualnienia pamiêci flash w
+nagrywarkach DVD za pomoc± pliku binarnego z firmware (obs³ugiwane s±
+tak¿e niektóre wykonywalne pliki z firmware) oraz zrzucania zawarto¶ci
+Flash ROM-u nagrywarki z powrotem na dysk. Narzêdzia powinny dzia³aæ
+ze wszystkimi urz±dzeniami aktualnie dostêpnymi w systemie
+operacyjnym, nawet tymi pod³±czonymi poprzez Firewire lub USB.
+
+Uwaga:
+
+U¿ywaj±c ten program i przyjmuj±c to o¶wiadczenie akceptujemy, ¿e ani
+autorzy tych programów ani CDFreaks.com nie s± odpowiedzialni za
+¿adne uszkodzenia spowodowane u¿ywaniem Binflasha. W przypadku
+uszkodzenia urz±dzenia poprzez u¿ycie tego narzêdzia lub jakiego¶
+eksperymentalnego firmware pozostaje tylko zakup nowego napêdu.
+
 %prep
-%setup -qcn binflash
+%setup -q -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
