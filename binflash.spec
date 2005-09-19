@@ -5,7 +5,7 @@ Version:	1.18
 Release:	0.1
 License:	? (closed source)
 Group:		Applications/System
-Source0:	http://binflash.cdfreaks.com/download/1/2/necflash.tgz
+Source0:	necflash.tgz
 # Source0-md5:	0147623bacc671d0893804ac3e6ecb39
 URL:		http://binflash.cdfreaks.com/
 ExclusiveArch:	%{ix86}
