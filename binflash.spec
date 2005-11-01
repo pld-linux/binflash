@@ -11,6 +11,8 @@ Source0:	http://binflash.cdfreaks.com/download/1/2/necflash_linux.tgz
 # extracted from http://support.necsam.com/optical/downloads/FlashFirmware/
 Source1:	NEC-ND3540A-1.03-orig.bin
 # Source1-md5:	3fade94896c03423670bd65622e22b9b
+# modified firmware:
+# extracted from http://liggydee.cdfreaks.com/page/3540/
 Source2:	NEC-ND3540A-1.03-bt-rpc1.bin
 # Source2-md5:	d07baf09816294f22b80818aba3b03e0
 Source3:	NEC-ND3540A-1.W7-rpc1.bin
