@@ -3,7 +3,7 @@ Summary(pl):	Binflash (wersja NEC) - uniwersalne narzêdzie do uaktualniania bina
 Name:		binflash
 Version:	1.22
 Release:	0.1
-License:	? (closed source)
+License:	Freeware
 Group:		Applications/System
 Source0:	http://binflash.cdfreaks.com/download/1/2/necflash_linux.tgz
 # NoSource0-md5:	2f7d6ad41faa3087fe25cbb32f4ce278
