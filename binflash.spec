@@ -11,6 +11,10 @@ Source0:	http://binflash.cdfreaks.com/download/1/2/necflash_linux.tgz
 # extracted from http://support.necsam.com/optical/downloads/FlashFirmware/
 Source1:	NEC-ND3540A-1.03-orig.bin
 # Source1-md5:	3fade94896c03423670bd65622e22b9b
+Source2:	NEC-ND3540A-1.03-bt-rpc1.bin
+# Source2-md5:	d07baf09816294f22b80818aba3b03e0
+Source3:	NEC-ND3540A-1.W7-rpc1.bin
+# Source3-md5:	1c13d7b8b991377de22ac0178393cc7f
 URL:		http://binflash.cdfreaks.com/
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -59,6 +63,8 @@ install -D necflash \
 
 # NEC-ND3540A firmware
 install %{SOURCE1} $RPM_BUILD_ROOT%{_libdir}/necflash
+install %{SOURCE2} $RPM_BUILD_ROOT%{_libdir}/necflash
+install %{SOURCE3} $RPM_BUILD_ROOT%{_libdir}/necflash
 
 %clean
 rm -rf $RPM_BUILD_ROOT
