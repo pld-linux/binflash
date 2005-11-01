@@ -6,7 +6,11 @@ Release:	0.1
 License:	Freeware
 Group:		Applications/System
 Source0:	http://binflash.cdfreaks.com/download/1/2/necflash_linux.tgz
-# NoSource0-md5:	2f7d6ad41faa3087fe25cbb32f4ce278
+# Source0-md5:	2f7d6ad41faa3087fe25cbb32f4ce278
+# original firmware:
+# extracted from http://support.necsam.com/optical/downloads/FlashFirmware/
+Source1:	NEC-ND3540A-1.03-orig.bin
+# Source1-md5:	3fade94896c03423670bd65622e22b9b
 URL:		http://binflash.cdfreaks.com/
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -48,9 +52,13 @@ eksperymentalnego firmware pozostaje tylko zakup nowego napêdu.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_libdir}/necflash
 
 install -D necflash \
 	$RPM_BUILD_ROOT%{_sbindir}/necflash
+
+# NEC-ND3540A firmware
+install %{SOURCE1} $RPM_BUILD_ROOT%{_libdir}/necflash
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -58,3 +66,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_sbindir}/necflash
+%dir %{_libdir}/necflash
+%{_libdir}/necflash/*.bin
