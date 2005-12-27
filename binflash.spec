@@ -21,7 +21,7 @@ URL:		http://binflash.cdfreaks.com/
 ExclusiveArch:	%{ix86} %{x8664}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_firmwaredir	%{_prefix}/lib/necflash
+%define		_firmwaredir	/lib/firmware/necflash
 
 %description
 Binflash is a collection of tools you may use in order to flash your
@@ -76,5 +76,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_sbindir}/necflash
-%dir %{_libdir}/necflash
+%dir %{_firmwaredir}
 %{_firmwaredir}/*.bin
