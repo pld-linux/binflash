@@ -18,8 +18,10 @@ Source2:	NEC-ND3540A-1.03-bt-rpc1.bin
 Source3:	NEC-ND3540A-1.W8-rpc1.bin
 # Source3-md5:	2bb65f47faa3a3e8d08ef813d30244b5
 URL:		http://binflash.cdfreaks.com/
-ExclusiveArch:	%{ix86}
+ExclusiveArch:	%{ix86} %{x8664}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_firmwaredir	%{_prefix}/lib/necflash
 
 %description
 Binflash is a collection of tools you may use in order to flash your
@@ -58,15 +60,15 @@ eksperymentalnego firmware pozostaje tylko zakup nowego napêdu.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_libdir}/necflash
+install -d $RPM_BUILD_ROOT%{_firmwaredir}
 
 install -D necflash \
 	$RPM_BUILD_ROOT%{_sbindir}/necflash
 
 # NEC-ND3540A firmware
-install %{SOURCE1} $RPM_BUILD_ROOT%{_libdir}/necflash
-install %{SOURCE2} $RPM_BUILD_ROOT%{_libdir}/necflash
-install %{SOURCE3} $RPM_BUILD_ROOT%{_libdir}/necflash
+install %{SOURCE1} $RPM_BUILD_ROOT%{_firmwaredir}
+install %{SOURCE2} $RPM_BUILD_ROOT%{_firmwaredir}
+install %{SOURCE3} $RPM_BUILD_ROOT%{_firmwaredir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -75,4 +77,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_sbindir}/necflash
 %dir %{_libdir}/necflash
-%{_libdir}/necflash/*.bin
+%{_firmwaredir}/*.bin
