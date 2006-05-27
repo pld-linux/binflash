@@ -9,7 +9,7 @@ Version:	1.29
 Release:	1
 License:	Freeware
 Group:		Applications/System
-Source0:	http://binflash.cdfreaks.com/download/1/2/necflash_linux.tgz
+Source0:	necflash_linux.tgz
 # Source0-md5:	be0c8c167f37d865ca0963aee0402a44
 URL:		http://binflash.cdfreaks.com/
 ExclusiveArch:	%{ix86} %{x8664}
