@@ -3,7 +3,7 @@
 #		- firmwares available at http://liggydee.cdfreaks.com/page/
 #
 Summary:	Binflash (NEC version) - universal firmware flasher for binary firmwares
-Summary(pl.UTF-8):   Binflash (wersja NEC) - uniwersalne narzędzie do uaktualniania binarnych firmware
+Summary(pl.UTF-8):	Binflash (wersja NEC) - uniwersalne narzędzie do uaktualniania binarnych firmware
 Name:		binflash
 Version:	1.29
 Release:	1
