@@ -3,7 +3,7 @@
 #		- firmwares available at http://liggydee.cdfreaks.com/page/
 #
 Summary:	Binflash (NEC version) - universal firmware flasher for binary firmwares
-Summary(pl):	Binflash (wersja NEC) - uniwersalne narzêdzie do uaktualniania binarnych firmware
+Summary(pl.UTF-8):   Binflash (wersja NEC) - uniwersalne narzÄ™dzie do uaktualniania binarnych firmware
 Name:		binflash
 Version:	1.29
 Release:	1
@@ -31,21 +31,21 @@ responsible for any damages caused by using Binflash. If you damage
 your drive by using this flasher or any experimental firmwares, do not
 RMA your drive but buy a new one!
 
-%description -l pl
-Binflash to zestaw narzêdzi do uaktualnienia pamiêci flash w
-nagrywarkach DVD za pomoc± pliku binarnego z firmware (obs³ugiwane s±
-tak¿e niektóre wykonywalne pliki z firmware) oraz zrzucania zawarto¶ci
-Flash ROM-u nagrywarki z powrotem na dysk. Narzêdzia powinny dzia³aæ
-ze wszystkimi urz±dzeniami aktualnie dostêpnymi w systemie
-operacyjnym, nawet tymi pod³±czonymi poprzez Firewire lub USB.
+%description -l pl.UTF-8
+Binflash to zestaw narzÄ™dzi do uaktualnienia pamiÄ™ci flash w
+nagrywarkach DVD za pomocÄ… pliku binarnego z firmware (obsÅ‚ugiwane sÄ…
+takÅ¼e niektÃ³re wykonywalne pliki z firmware) oraz zrzucania zawartoÅ›ci
+Flash ROM-u nagrywarki z powrotem na dysk. NarzÄ™dzia powinny dziaÅ‚aÄ‡
+ze wszystkimi urzÄ…dzeniami aktualnie dostÄ™pnymi w systemie
+operacyjnym, nawet tymi podÅ‚Ä…czonymi poprzez Firewire lub USB.
 
 Uwaga:
 
-U¿ywaj±c ten program i przyjmuj±c to o¶wiadczenie akceptujemy, ¿e ani
-autorzy tych programów ani CDFreaks.com nie s± odpowiedzialni za
-¿adne uszkodzenia spowodowane u¿ywaniem Binflasha. W przypadku
-uszkodzenia urz±dzenia poprzez u¿ycie tego narzêdzia lub jakiego¶
-eksperymentalnego firmware pozostaje tylko zakup nowego napêdu.
+UÅ¼ywajÄ…c ten program i przyjmujÄ…c to oÅ›wiadczenie akceptujemy, Å¼e ani
+autorzy tych programÃ³w ani CDFreaks.com nie sÄ… odpowiedzialni za
+Å¼adne uszkodzenia spowodowane uÅ¼ywaniem Binflasha. W przypadku
+uszkodzenia urzÄ…dzenia poprzez uÅ¼ycie tego narzÄ™dzia lub jakiegoÅ›
+eksperymentalnego firmware pozostaje tylko zakup nowego napÄ™du.
 
 %prep
 %setup -q -c
