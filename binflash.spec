@@ -6,7 +6,7 @@ Summary:	Binflash (NEC version) - universal firmware flasher for binary firmware
 Summary(pl.UTF-8):	Binflash (wersja NEC) - uniwersalne narzędzie do uaktualniania binarnych firmware
 Name:		binflash
 Version:	1.38
-Release:	1
+Release:	2
 License:	Freeware
 Group:		Applications/System
 Source0:	necflash_linux.tgz
